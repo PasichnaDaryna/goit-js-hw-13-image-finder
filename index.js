@@ -41,10 +41,10 @@ function onSearchQuery(event) {
   loadMoreBtn.show();
   newsApiService.resetPage();
   clearCardsContainer();
-  fetchCards();
+  fetchImgs();
 }
 
-function fetchCards() {
+function fetchImgs() {
   loadMoreBtn.disable();
   return newsApiService.fetchCards().then(images => {
     appendCardsMarkup(images);
@@ -70,7 +70,7 @@ function clearCardsContainer() {
 
 
 function onLoadMore() {
-  fetchCards()
+  fetchImgs()
     .then(
       setTimeout(() => {
         window.scrollBy({
