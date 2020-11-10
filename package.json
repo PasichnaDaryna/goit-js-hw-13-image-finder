@@ -1,0 +1,30 @@
+{
+  "name": "goit-js-hw-13-image-finder",
+  "version": "1.0.0",
+  "description": "Критерии приема\r Созданы репозитории goit-js-hw-13-image-finder.\r При сдаче домашней работы есть две ссылки для каждого проекта: на исходные файлы и рабочую страницу на GitHub pages.\r При посещении рабочей страницы (GitHub pages) задания, в консоли нету ошибок и предупреждений\r Имена переменных и функций понятные, описательные\r Проект собран с помощью Webpack\r Код отформатирован с помощью Prettier\r Добавь минимальную стилизацию\r Есть файл apiService.js с дефолтным экспортом объекта отвечающего за логику HTTP-запросов к API\r Задание - поиск изображений\r Напиши небольшое приложение поиска и просмотра изображений по ключевому слову",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "predeploy": "npm run build -- --public-url /goit-js-hw-13-image-finder/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PasichnaDaryna/goit-js-hw-13-image-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PasichnaDaryna/goit-js-hw-13-image-finder/issues"
+  },
+  "homepage": "https://github.com/PasichnaDaryna/goit-js-hw-13-image-finder#readme",
+  "dependencies": {
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pnotify": "^5.2.0"
+  }
+}
