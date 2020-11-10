@@ -46,7 +46,7 @@ function onSearchQuery(event) {
 
 function fetchImgs() {
   loadMoreBtn.disable();
-  return newsApiService.fetchCards().then(images => {
+  return newsApiService.fetchImgs().then(images => {
     appendCardsMarkup(images);
     loadMoreBtn.enable();
     if (images.length === 0) {
